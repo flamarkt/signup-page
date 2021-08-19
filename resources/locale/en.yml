@@ -1,0 +1,7 @@
+flamarkt-signup-page:
+    admin:
+        settings:
+            redirect: Default redirect after signup
+            forceRedirect: Always redirect to configured URL
+    forum:
+        complete-social-login: Fill the form to complete the signup using your social account

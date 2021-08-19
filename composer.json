@@ -1,0 +1,40 @@
+{
+    "name": "flamarkt/signup-page",
+    "description": "Dedicated Sign Up page",
+    "keywords": [
+        "flarum"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.0",
+        "ext-json": "*"
+    },
+    "authors": [
+        {
+            "name": "Flamarkt",
+            "homepage": "https://flamarkt.org/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/flamarkt/signup-page/issues",
+        "source": "https://github.com/flamarkt/signup-page"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Sign Up Page",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-user-plus",
+                "backgroundColor": "#266a13",
+                "color": "#fff"
+            },
+            "optional-dependencies": [
+                "flamarkt/core"
+            ]
+        },
+        "flamarkt-backoffice": {
+            "showInBackoffice": true
+        }
+    }
+}
