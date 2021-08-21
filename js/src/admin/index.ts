@@ -1,5 +1,3 @@
-import app from 'flarum/admin/app';
-
 app.initializers.add('flamarkt-signup-page', () => {
     app.extensionData.for('flamarkt-signup-page')
         .registerSetting({
