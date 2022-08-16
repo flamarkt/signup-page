@@ -16,7 +16,7 @@ export default class SignUpLayout extends AbstractLayout {
         return 'SignUpPage';
     }
 
-    title(): string {
+    title() {
         return app.translator.trans('core.forum.sign_up.title');
     }
 

@@ -1,6 +1,7 @@
 import {Vnode} from 'mithril';
 import app from 'flarum/forum/app';
 import Page from 'flarum/common/components/Page';
+import extractText from 'flarum/common/utils/extractText';
 import SignUpLayout from '../layouts/SignUpLayout';
 import SignUpForm from '../components/SignUpForm';
 
@@ -8,7 +9,7 @@ export default class SignUpPage extends Page {
     oninit(vnode: Vnode) {
         super.oninit(vnode);
 
-        app.setTitle(app.translator.trans('core.forum.sign_up.title'));
+        app.setTitle(extractText(app.translator.trans('core.forum.sign_up.title')));
         app.setTitleCount(0);
     }
 

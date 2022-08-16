@@ -4,7 +4,6 @@ import HeaderSecondary from 'flarum/forum/components/HeaderSecondary';
 import ForumApplication from 'flarum/forum/ForumApplication';
 import LogInModal from 'flarum/forum/components/LogInModal';
 import LinkButton from 'flarum/common/components/LinkButton';
-import ItemList from 'flarum/common/utils/ItemList';
 import SignUpPage from './pages/SignUpPage';
 import {forum} from './compat';
 
@@ -16,9 +15,9 @@ app.initializers.add('flamarkt-signup-page', () => {
         component: SignUpPage,
     };
 
-    extend(HeaderSecondary.prototype, 'items', function (items: ItemList) {
+    extend(HeaderSecondary.prototype, 'items', function (items) {
         if (items.has('signUp')) {
-            items.replace('signUp', LinkButton.component({
+            items.setContent('signUp', LinkButton.component({
                 className: 'Button Button--link',
                 href: app.route('flamarkt.signup'),
             }, app.translator.trans('core.forum.header.sign_up_link')));

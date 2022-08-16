@@ -75,7 +75,7 @@ export default class SignUpForm extends Component {
             return;
         }
 
-        const redirect = app.forum.attribute('flamarktSignUpRedirect');
+        const redirect = app.forum.attribute<string>('flamarktSignUpRedirect');
 
         if (redirect) {
             window.location.href = redirect;
